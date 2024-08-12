@@ -1,6 +1,5 @@
 import logging
 
-# Configuração do logger
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -10,7 +9,6 @@ logging.basicConfig(
     ]
 )
 
-# Função para realizar operações básicas
 def calculate(num1, num2, operation):
     try:
         if operation == '+':
@@ -34,7 +32,6 @@ def calculate(num1, num2, operation):
         logging.error(f"Erro ao realizar a operação: {e}", exc_info=True)
         return "Erro na operação"
 
-# Função principal para interação com o usuário
 def main():
     while True:
         try:
