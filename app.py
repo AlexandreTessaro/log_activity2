@@ -10,6 +10,7 @@ logging.basicConfig(
 )
 
 def calculate(num1, num2, operation):
+    logging.debug(f"Tentando realizar a operação: {num1} {operation} {num2}")
     try:
         if operation == '+':
             result = num1 + num2
@@ -21,6 +22,9 @@ def calculate(num1, num2, operation):
             result = num1 * num2
             logging.info(f'Operação: {num1} * {num2} = {result}')
         elif operation == '/':
+            if num2 == 0:
+                logging.critical("Tentativa de divisão por zero!")
+                raise ZeroDivisionError("Não é possível dividir por zero")
             result = num1 / num2
             logging.info(f'Operação: {num1} / {num2} = {result}')
         else:

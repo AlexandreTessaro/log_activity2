@@ -1,2 +1,19 @@
 2024-08-12 20:26:46,170 - INFO - Operação: 2.0 + 2.0 = 4.0
 2024-08-12 20:32:44,374 - INFO - Operação: 5.0 * 5.0 = 25.0
+2024-08-12 20:48:41,958 - DEBUG - Este é um log de depuração (DEBUG)
+2024-08-12 20:48:41,958 - INFO - Este é um log informativo (INFO)
+2024-08-12 20:48:41,959 - WARNING - Este é um aviso (WARNING)
+2024-08-12 20:48:41,959 - ERROR - Este é um erro (ERROR)
+2024-08-12 20:48:41,959 - CRITICAL - Este é um erro crítico (CRITICAL)
+2024-08-12 20:48:48,868 - INFO - Operação: 1.0 - 7.0 = -6.0
+2024-08-12 20:51:09,397 - DEBUG - Tentando realizar a operação: 1.0 / 0.0
+2024-08-12 20:51:09,398 - CRITICAL - Tentativa de divisão por zero!
+2024-08-12 20:51:09,402 - ERROR - Erro ao realizar a operação: Não é possível dividir por zero
+Traceback (most recent call last):
+  File "C:\Users\al.vieira\Desktop\log_activity\app.py", line 27, in calculate
+    raise ZeroDivisionError("Não é possível dividir por zero")
+ZeroDivisionError: Não é possível dividir por zero
+2024-08-12 20:51:28,132 - DEBUG - Tentando realizar a operação: 1.0 + 4.0
+2024-08-12 20:51:28,133 - INFO - Operação: 1.0 + 4.0 = 5.0
+2024-08-12 21:10:01,945 - DEBUG - Tentando realizar a operação: 1.0 - 1.0
+2024-08-12 21:10:01,947 - INFO - Operação: 1.0 - 1.0 = 0.0
